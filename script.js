@@ -1,5 +1,5 @@
 async function getData() {
-    const url = "https://example.org/products.json";
+    const url = "generated.json";
     try {
       const response = await fetch(url);
       if (!response.ok) {
@@ -13,3 +13,4 @@ async function getData() {
     }
   }
   
+  getData();
