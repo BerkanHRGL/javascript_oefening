@@ -1,0 +1,15 @@
+#data-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#data-container li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#data-container strong {
+    color: #333;
+}

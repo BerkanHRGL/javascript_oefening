@@ -11,7 +11,13 @@ async function getData() {
         
         container.innerHTML = `
             <ul>
-                ${json.map(item => `<li>${JSON.stringify(item)}</li>`).join('')}
+                ${json.map(item => `
+                    <li>
+                        ${Object.entries(item).map(([key, value]) => `
+                            <strong>${key}:</strong> ${value}
+                        `).join('<br>')}
+                    </li>
+                `).join('')}
             </ul>
         `;
         
